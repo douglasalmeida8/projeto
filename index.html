@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://kit.fontawesome.com/b551e41b46.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,900&display=swap" rel="stylesheet">
+    <title>Douglas Rodrigues</title>
+</head>
+<body>
+        <header>
+            <div>
+                <img src="imagens/foto1.jpg" alt="Logo Douglas Rodrigues">
+            </div>
+            <ul>
+                <li>
+                    <a target="blank" href="https://github.com/douglasalmeida8">github</a>
+                </li>
+                <li>
+                    <a target="blank" href="mailto:douglasalmeida8@msn.com">email</a>
+                </li>
+                <li>
+                    <a target="blank" href="https://wa.me/11969186565">whatsapp</a>
+                </li>
+            </ul>
+        </header>
+
+        <main>
+
+            <section class="container">
+                <div class="name">
+                    <h1>Douglas Rodrigues</h1>
+                    <h5>Estudante Front-End</h5>
+                </div>
+
+                <div onclick="displayAbout()" id="arrow">
+                    <i id="animation" class="fa-solid fa-square-caret-down"></i>
+                </div>
+
+                <div style="display: none;" id="about">
+                    <p>Possuo dez anos de experiência na área de suporte, e a partir de hoje estou em busca de novos desafios na área de Desenvolvimento Front-end</p>
+                </div>
+
+                <div class="form">
+                    <div>
+                        <p>deixe seu contato</p>
+                    </div>
+                    <form action="">
+                        <input type="text" placeholder="seu melhor email!!">
+                        <button>enviar!</button>
+                    </form>
+                </div>
+
+            </section>
+        </main>
+
+        <script>
+            function displayAbout(){
+                var arrow = document.getElementById('animation');
+                arrow.classList.toggle('rotate');
+                var display = document.getElementById('about');
+                display.classList.toggle('active');
+            }
+        </script>
+</body>
+</html>
